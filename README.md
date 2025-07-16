@@ -1,4 +1,4 @@
-# 📥 Pull Request, Merge Requests and Code Review in Git Projects
+# 📥 Pull Request/Merge Requests and Code Review in Git Projects
 
 > _"Keep `master` clean, tested, and production-ready."_
 
@@ -37,9 +37,33 @@ Sample Image of branches that is ahead of the master.
 
 ![Sample Pull 2](Images/branchahead.png)
 
-In this sample, I will update the README.md file and push it again to the repository. The video will that the feature/database-connection branch is ahead of the master branch by 2 commits
+In this sample, I will update the README.md file and push it again to the repository. The video will that the feature/database-connection branch is ahead of the master branch by 2 commits that needs to be merge.
 
 ![Pull Request](Images/pullrequest1.gif)
+
+## 🧪 Example Flow
+
+```bash
+# I updated the vim README.md
+vim README.md
+
+# Check status
+git status
+
+# Make and commit changes
+git add README.md
+git commit -m "Update readme file"
+
+# Push the branch
+git push
+```
+
+## 📊 GitLab vs GitHub Terminology
+
+| Platform | Action Term        |
+| -------- | ------------------ |
+| GitLab   | Merge Request (MR) |
+| GitHub   | Pull Request (PR)  |
 
 ## 👁️ Review & Approval Workflow
 
@@ -49,36 +73,26 @@ In this sample, I will update the README.md file and push it again to the reposi
 4. 🔁 The developer revises the branch and updates the PR/MR.
 5. ✅ Once approved, the reviewer (or developer) **merges** the changes into `master`.
 
-## 📊 GitLab vs GitHub Terminology
+## 👷 Assignee Role Workflow
 
-| Platform | Action Term        |
-| -------- | ------------------ |
-| GitLab   | Merge Request (MR) |
-| GitHub   | Pull Request (PR)  |
+1. 🎯 Assignee receives or takes ownership of a specific task, bug, or feature.
+2. 💻 They develop the necessary code changes on a dedicated feature branch.
+3. ➡️ The Assignee creates a Pull Request (PR) or Merge Request (MR), clearly describing their changes and linking relevant issues.
+4. 🔄 They actively monitor for reviewer comments and diligently implement necessary revisions in their branch.
+5. ✅ Once the PR/MR receives final approval, the Assignee may merge their changes (if enabled) or coordinate the merge with the reviewer.
 
-## 🧪 Example Flow
-
-```bash
-# Create a new feature branch from master
-git checkout master
-git pull origin master
-git checkout -b feature/database-connection
-
-# Make and commit changes
-git add .
-git commit -m "Added DB connection logic"
-
-# Push the branch
-git push --set-upstream origin feature/database-connection
-```
-
-## 🧾 Review and Merge
+## 🧾 Review and Merge Flow
 
 1. Go to **GitLab or GitHub UI**
 2. Create a **Merge Request** into `master`
-3. Add reviewer and description
-4. Reviewer approves and merges
-5. Changes now part of `master` 🎉
+3. Add description
+4. Add a reviewer (optional)
+5. Add Assignee (optional)
+6. Changes now part of `master` 🎉
+
+Sample merge/pull request video
+
+![Pull Request](Images/mergepull.gif)
 
 ## 📌 Best Practices
 
