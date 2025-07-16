@@ -37,6 +37,10 @@ Sample Image of branches that is ahead of the master.
 
 ![Sample Pull 2](Images/branchahead.png)
 
+In this sample, I will update the README.md file and push it again to the repository. The video will that the feature/database-connection branch is ahead of the master branch by 2 commits
+
+![Pull Request](Images/pullrequest1.gif)
+
 ## 👁️ Review & Approval Workflow
 
 1. 🔍 **Reviewer** checks the code, suggests improvements, or identifies issues.
