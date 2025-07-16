@@ -33,7 +33,7 @@ Sample Pull Request image upon visiting your repository.
 
 ![Sample Pull 1](Images/pullrequest.png)
 
-Sample Image of our branches that is ahead of the master.
+Sample Image of branches that is ahead of the master.
 
 ![Sample Pull 2](Images/branchahead.png)
 
