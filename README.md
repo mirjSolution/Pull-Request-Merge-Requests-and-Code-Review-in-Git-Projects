@@ -90,9 +90,34 @@ git push
 5. Add Assignee (optional)
 6. Changes now part of `master` 🎉
 
-Sample merge/pull request video
+---
+
+### Sample merge/pull request video
 
 ![Pull Request](Images/mergepull.gif)
+
+---
+
+### Sample merge/pull request and assign to collaborator
+
+![Pull Request](Images/assignmerge.gif)
+
+1. on the terminal
+
+```bash
+git checkout -b feature/admin-auth
+git push --set-upstream origin feature/admin-auth
+```
+
+2. on the github ui
+
+Create a Pull Request (PR) from this new branch to your main (or master) branch on GitHub.
+
+On the Pull Request page in GitHub's web interface, you will see an "Assignees" section.
+
+Click on the "Assignees" link/gear icon and select e.g rico-devops from the list of collaborators.
+
+---
 
 ## 📌 Best Practices
 
